@@ -2,11 +2,16 @@
   "name": "scale-nodejs-cluster",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "worker.js",
   "scripts": {
+    "start": "node cluster",
+    "dev": "nodemon cluster.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "autocannon": "^6.4.0"
+  }
 }
